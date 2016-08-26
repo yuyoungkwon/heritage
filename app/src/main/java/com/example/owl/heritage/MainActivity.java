@@ -1,5 +1,6 @@
 package com.example.owl.heritage;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
@@ -8,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -55,8 +56,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
+    public void onButton1Clicked(View v){
+        Intent myIntent = new Intent(getApplicationContext(), Jongro.class);
+        startActivity(myIntent);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
